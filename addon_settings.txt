@@ -84,6 +84,10 @@ force force ace_frag_maxTrackPerFrame = 10;
 force force ace_frag_reflectionsEnabled = true;
 force force ace_frag_spallEnabled = true;
 
+// ACE G-Forces
+force ace_gforces_coef = 1;
+force ace_gforces_enabledFor = 1;
+
 // ACE Goggles
 force force ace_goggles_effects = 0;
 force force ace_goggles_showClearGlasses = true;
@@ -171,6 +175,7 @@ force ace_map_gestures_enabled = true;
 force ace_map_gestures_interval = 0.03;
 force ace_map_gestures_maxRange = 7;
 ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
+force ace_map_gestures_onlyShowFriendlys = false;
 
 // ACE Map Tools
 ace_maptools_drawStraightLines = true;
@@ -228,6 +233,7 @@ force force ace_medical_treatment_medicIV = 1;
 force force ace_medical_treatment_medicPAK = 1;
 force force ace_medical_treatment_medicSurgicalKit = 1;
 force force ace_medical_treatment_timeCoefficientPAK = 1;
+force ace_medical_treatment_woundReopenChance = 1;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
@@ -319,7 +325,7 @@ force ace_switchunits_switchToWest = false;
 
 // ACE Uncategorized
 force ace_fastroping_requireRopeItems = false;
-force ace_gforces_enabledFor = 1;
+force ace_gunbag_swapGunbagEnabled = true;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
@@ -379,10 +385,10 @@ ace_vehicles_speedLimiterStep = 5;
 // ACE View Distance Limiter
 force force ace_viewdistance_enabled = true;
 force force ace_viewdistance_limitViewDistance = 12000;
-force force ace_viewdistance_objectViewDistanceCoeff = 6;
+force force ace_viewdistance_objectViewDistanceCoeff = 5;
 force force ace_viewdistance_viewDistanceAirVehicle = 0;
-force force ace_viewdistance_viewDistanceLandVehicle = 1;
-force force ace_viewdistance_viewDistanceOnFoot = 1;
+force force ace_viewdistance_viewDistanceLandVehicle = 0;
+force force ace_viewdistance_viewDistanceOnFoot = 0;
 
 // ACE Weapons
 force force ace_common_persistentLaserEnabled = false;
@@ -411,13 +417,55 @@ force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
 
+// ACEX Field Rations
+force acex_field_rations_affectAdvancedFatigue = true;
+force acex_field_rations_enabled = false;
+acex_field_rations_hudShowLevel = 0;
+acex_field_rations_hudTransparency = -1;
+acex_field_rations_hudType = 0;
+force acex_field_rations_hungerSatiated = 1;
+force acex_field_rations_terrainObjectActions = true;
+force acex_field_rations_thirstQuenched = 1;
+force acex_field_rations_timeWithoutFood = 2;
+force acex_field_rations_timeWithoutWater = 2;
+force acex_field_rations_waterSourceActions = 2;
+
+// ACEX Fortify
+acex_fortify_settingHint = 2;
+
+// ACEX Headless
+force force acex_headless_delay = 15;
+force force acex_headless_enabled = true;
+force force acex_headless_endMission = 0;
+force force acex_headless_log = true;
+force force acex_headless_transferLoadout = 2;
+
+// ACEX Sitting
+force force acex_sitting_enable = true;
+
+// ACEX View Restriction
+force acex_viewrestriction_mode = 0;
+force acex_viewrestriction_modeSelectiveAir = 0;
+force acex_viewrestriction_modeSelectiveFoot = 0;
+force acex_viewrestriction_modeSelectiveLand = 0;
+force acex_viewrestriction_modeSelectiveSea = 0;
+acex_viewrestriction_preserveView = false;
+
+// ACEX Volume
+acex_volume_enabled = false;
+acex_volume_fadeDelay = 1;
+force force acex_volume_lowerInVehicles = true;
+acex_volume_reduction = 5;
+acex_volume_remindIfLowered = false;
+acex_volume_showNotification = true;
+
 // CBA UI
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
 
 // CBA Weapons
-cba_disposable_dropUsedLauncher = 2;
-force cba_disposable_replaceDisposableLauncher = true;
+force force cba_disposable_dropUsedLauncher = 2;
+force force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
 
@@ -479,15 +527,15 @@ force MCC_ied_wrecks = "[[""MI-48"",""Land_UWreck_Heli_Attack_02_F""],[""BMP2"",
 
 // MCC Commander Console
 force force MCC_allowConsole = false;
-force force MCC_allowRTS = true;
+force force MCC_allowRTS = false;
 force force MCC_ConsoleACTime = 300;
-force force MCC_ConsoleCanCommandAI = true;
+force force MCC_ConsoleCanCommandAI = false;
 force force MCC_ConsoleLiveFeedHelmets = "[""H_HelmetB"",""H_HelmetB_paint"",""H_HelmetB_light"",""H_HelmetO_ocamo"",""H_HelmetLeaderO_ocamo"",""H_HelmetSpecO_ocamo"",""H_HelmetSpecO_blk""]";
 force force MCC_ConsoleLiveFeedHelmetsOnly = false;
-force force MCC_ConsoleOnlyShowUnitsWithGPS = true;
-force force MCC_ConsolePlayersCanSeeWPonMap = true;
-force force MCC_defaultCASEnabled = true;
-force force MCC_defaultSupplyDropsEnabled = true;
+force force MCC_ConsoleOnlyShowUnitsWithGPS = false;
+force force MCC_ConsolePlayersCanSeeWPonMap = false;
+force force MCC_defaultCASEnabled = false;
+force force MCC_defaultSupplyDropsEnabled = false;
 
 // MCC GAIA
 force GAIA_CACHE_STAGE_1 = 3000;
@@ -500,34 +548,34 @@ force MCC_GAIA_AMBIANT_CHANCE = 50;
 force MCC_GAIA_ATTACKS_FOR_NONGAIA = false;
 
 // MCC General
-force MCC_allowlogistics = true;
-force MCC_allowsqlPDA = true;
-force MCC_ambientBirdsSettingIndex = true;
-force MCC_ambientFireSettingIndex = true;
-force MCC_armedCivilansWeapons = "[""hgun_P07_F"",""hgun_Rook40_F"",""hgun_ACPC2_F"",""hgun_Pistol_heavy_01_F"",""hgun_Pistol_heavy_02_F"",""SMG_01_F"",""SMG_02_F"",""hgun_PDW2000_F""]";
-force MCC_artilleryComputerIndex = true;
-force MCC_artillerySpreadArray = "[[""On-target"",0], [""Precise"",100], [""Tight"",200], [""Wide"",400]]";
-MCC_CuratorEditDisabled = false;
-force MCC_MessagesIndex = true;
-force MCC_syncOn = true;
-force MCC_t2tIndex = 1;
-force MCC_timeMultiplier_settings = 1;
+force force MCC_allowlogistics = true;
+force force MCC_allowsqlPDA = false;
+force force MCC_ambientBirdsSettingIndex = true;
+force force MCC_ambientFireSettingIndex = false;
+force force MCC_armedCivilansWeapons = "[""hgun_P07_F"",""hgun_Rook40_F"",""hgun_ACPC2_F"",""hgun_Pistol_heavy_01_F"",""hgun_Pistol_heavy_02_F"",""SMG_01_F"",""SMG_02_F"",""hgun_PDW2000_F""]";
+force force MCC_artilleryComputerIndex = false;
+force force MCC_artillerySpreadArray = "[[""On-target"",0], [""Precise"",100], [""Tight"",200], [""Wide"",400]]";
+force force MCC_CuratorEditDisabled = false;
+force force MCC_MessagesIndex = false;
+force force MCC_syncOn = true;
+force force MCC_t2tIndex = 0;
+force force MCC_timeMultiplier_settings = 1;
 
 // MCC Mechanics
-force MCC_allow3DSpotting = true;
-force MCC_arcadeTanks = false;
-force MCC_breacingAmmo = "[""prpl_8Rnd_12Gauge_Slug"",""prpl_6Rnd_12Gauge_Slug"",""rhsusf_8Rnd_Slug"",""rhsusf_5Rnd_Slug""]";
-MCC_cover = false;
-MCC_coverUI = false;
-MCC_coverVault = false;
-force MCC_disableFatigue = true;
-force MCC_ingameUI = true;
-force MCC_interaction = true;
-force MCC_nonLeathalAmmo = "[""prpl_8Rnd_12Gauge_Slug"",""prpl_6Rnd_12Gauge_Slug"",""rhsusf_8Rnd_Slug"",""rhsusf_5Rnd_Slug""]";
-MCC_quickWeaponChange = false;
-force MCC_surviveModAllowSearch_index = 0;
-force MCC_surviveModPlayerGear = false;
-force MCC_surviveModPlayerPos = false;
+force force MCC_allow3DSpotting = true;
+force force MCC_arcadeTanks = false;
+force force MCC_breacingAmmo = "[""prpl_8Rnd_12Gauge_Slug"",""prpl_6Rnd_12Gauge_Slug"",""rhsusf_8Rnd_Slug"",""rhsusf_5Rnd_Slug""]";
+force force MCC_cover = false;
+force force MCC_coverUI = false;
+force force MCC_coverVault = false;
+force force MCC_disableFatigue = true;
+force force MCC_ingameUI = true;
+force force MCC_interaction = true;
+force force MCC_nonLeathalAmmo = "[""prpl_8Rnd_12Gauge_Slug"",""prpl_6Rnd_12Gauge_Slug"",""rhsusf_8Rnd_Slug"",""rhsusf_5Rnd_Slug""]";
+force force MCC_quickWeaponChange = false;
+force force MCC_surviveModAllowSearch_index = 0;
+force force MCC_surviveModPlayerGear = false;
+force force MCC_surviveModPlayerPos = false;
 
 // MCC Mission Wizard
 force MCC_MWAA = "[""B_APC_Tracked_01_AA_F"",""O_APC_Tracked_02_AA_F"",""I_APC_Wheeled_03_cannon_F""]";
@@ -570,18 +618,18 @@ force MCC_rsEnableDriversPilots = false;
 force MCC_rsEnableRoleWeapons = false;
 
 // MCC User Interface
-force MCC_groupMarkers = false;
-force MCC_hitRadar = 0;
-force MCC_indevidualMarkers = false;
-MCC_nameTags = false;
-MCC_NameTags_direct = false;
-force MCC_Settings_compassEnabled = 2;
-force MCC_Settings_forceCamera = 3;
-MCC_Settings_grassDetail = 10;
-MCC_Settings_ViewDistance = 5000;
-force MCC_showActionKey = true;
-force MCC_suppressionOn = false;
-force MCC_UIModuleTickets = false;
+force force MCC_groupMarkers = false;
+force force MCC_hitRadar = 0;
+force force MCC_indevidualMarkers = false;
+force force MCC_nameTags = false;
+force force MCC_NameTags_direct = false;
+force force MCC_Settings_compassEnabled = 2;
+force force MCC_Settings_forceCamera = 0;
+force force MCC_Settings_grassDetail = 10;
+force force MCC_Settings_ViewDistance = 5000;
+force force MCC_showActionKey = true;
+force force MCC_suppressionOn = false;
+force force MCC_UIModuleTickets = false;
 
 // STUI Settings
 STGI_Settings_Enabled = true;
@@ -597,22 +645,22 @@ STHud_Settings_UnconsciousFadeEnabled = true;
 STNT_Settings_Enabled = true;
 
 // Task Force Arrowhead Radio
-TF_default_radioVolume = 9;
-force TF_give_microdagr_to_soldier = true;
-force TF_give_personal_radio_to_regular_soldier = false;
-force TF_no_auto_long_range_radio = true;
-force TF_same_dd_frequencies_for_side = false;
-force TF_same_lr_frequencies_for_side = false;
-force TF_same_sw_frequencies_for_side = false;
+force force TF_default_radioVolume = 9;
+force force TF_give_microdagr_to_soldier = true;
+force force TF_give_personal_radio_to_regular_soldier = false;
+force force TF_no_auto_long_range_radio = true;
+force force TF_same_dd_frequencies_for_side = false;
+force force TF_same_lr_frequencies_for_side = false;
+force force TF_same_sw_frequencies_for_side = false;
 
 // Zeus Enhanced
 force force zen_camera_adaptiveSpeed = true;
 force force zen_camera_defaultSpeedCoef = 1;
 force force zen_camera_fastSpeedCoef = 1;
 force force zen_camera_followTerrain = true;
-force zen_common_ascensionMessages = false;
+force force zen_common_ascensionMessages = false;
 force force zen_common_autoAddObjects = true;
-force zen_common_cameraBird = false;
+force force zen_common_cameraBird = false;
 force force zen_common_darkMode = false;
 force force zen_common_disableGearAnim = true;
 force force zen_common_preferredArsenal = 1;
@@ -637,4 +685,3 @@ force force zen_vision_enableRedGreenThermal = false;
 force force zen_vision_enableRedHotCold = false;
 force force zen_vision_enableWhiteHot = true;
 force force zen_vision_enableWhiteHotRedCold = false;
-
